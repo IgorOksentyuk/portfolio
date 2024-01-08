@@ -8,11 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        dark: '#111',
+        lightBlue: '#4299e1',
+        accentBlue: '#3182ce',
       },
+      keyframes: {
+        'trans-left': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'trans-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'trans-left': 'trans-left 1s ease-in-out',
+        'trans-right': 'trans-right 1s ease-in-out',
+      }
     },
   },
   plugins: [],
