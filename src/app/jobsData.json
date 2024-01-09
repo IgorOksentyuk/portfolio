@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "company": "Self-employed",
+    "start": "01.01.2022",
+    "end": "09.11.2023",
+    "type": "full-time",
+    "logo": "jsLogo",
+    "description": [
+      {
+        "name": "Adhered to the company's workflow and reported on the status of tasks in Google Spreadsheet;"
+      },
+      {
+        "name": "Attended regular Zoom meetings with the team and actively worked in a team to achieve development goals;"
+      },
+      {
+        "name": "UI/UX Design, Responsive Design, JavaScript Development, Component-Based Architecture, Web Performance Optimization, Server-Side Logic, API Development, Database Management;"
+      },
+      { "name": "Testing and Debugging;" },
+      { "name": "Version Control and Deployment." }
+    ]
+  },
+  {
+    "id": "2",
+    "company": "GID Agency",
+    "start": "09.11.2023",
+    "end": "Present",
+    "type": "part-time",
+    "logo": "gidLogo",
+    "description": [
+      {
+        "name": "Developed adaptive landing pages of various complexity levels based on WordPress (ACF, Elementor);"
+      },
+      {
+        "name": "Participated in team calls to discuss company goals and improvement methods;"
+      },
+      { "name": "Approved and corrected design layouts for landing pages;" },
+      {
+        "name": "Made edits, and improved existing websites and other projects."
+      }
+    ]
+  }
+]

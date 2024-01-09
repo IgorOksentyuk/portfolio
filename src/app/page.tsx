@@ -2,6 +2,7 @@
 
 import Header from "./components/Header";
 import Info from "./components/Info";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
 
       <main className="min-h-screen w-full py-[100px] px-[20px]">
         <Info />
+        <Experience />
       </main>
     </div>
   )

@@ -7,7 +7,7 @@ export default function Info() {
   }
 
   return (
-    <section id="info" className="py-[100px]">
+    <section id="info" className="border-b border-white border-opacity-50 py-[100px]">
       <div className="text-white flex flex-col md:grid md:grid-cols-6 md:grid-rows-2">
         <h1
           className="z-10 text-[40px] md:text-[60px] font-bold tracking-wide text-center md:text-left 
