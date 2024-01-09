@@ -34,10 +34,11 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed w-full flex justify-between items-center max-w-screen-xl py-6 bg-dark
-     text-white font-semibold z-50 text-lg  md:border-b border-b-none border-white border-opacity-50">
+    <header className="fixed w-full flex justify-between items-center
+    max-w-screen-xl py-6 bg-dark md:border-b border-b-none border-white border-opacity-50
+    text-white font-semibold z-50 text-lg">
       <div
-        className="item relative cursor-pointer ml-6"
+        className="unde-line relative cursor-pointer ml-6"
         onClick={downloadCV}
       >
         Download CV
@@ -48,7 +49,7 @@ export default function Header() {
         {links.map(link => (
           <li
             key={link.name}
-            className="item cursor-pointer relative md:ml-6 md:my-0 my-6 uppercase"
+            className="unde-line cursor-pointer relative md:ml-6 md:my-0 my-6 uppercase"
           >
             <a
               href={link.link}

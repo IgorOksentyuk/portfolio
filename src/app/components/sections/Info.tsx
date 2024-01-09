@@ -1,11 +1,8 @@
-import myPhoto from '../../assets/my-photo.png';
+import HireButton from '@/app/shared/HireButton';
+import myPhoto from '../../../assets/my-photo.png';
 import Image from "next/image";
 
 export default function Info() {
-  const openTelegram = () => {
-    window.open('https://t.me/igor_oksentyuk', '_blank')
-  }
-
   return (
     <section id="info" className="border-b border-white border-opacity-50 py-[100px]">
       <div className="text-white flex flex-col md:grid md:grid-cols-6 md:grid-rows-2">
@@ -34,14 +31,7 @@ export default function Info() {
             If you have an exciting project that requires exceptional skills, I&apos;m the perfect fit for the job.
           </p>
 
-          <button
-            className="text-[30px] text-white
-            w-[300px] h-[80px] border border-solid border-white
-            transition-bg transition-text duration-300 hover:bg-white hover:text-dark"
-            onClick={openTelegram}
-          >
-            Hire me!
-          </button>
+          <HireButton />
         </div>
       </div>
     </section>

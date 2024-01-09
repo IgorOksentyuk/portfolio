@@ -14,7 +14,7 @@ body {
   background-color: #111;
 }
 
-.item::before {
+.unde-line::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -28,7 +28,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.item:hover::before {
+.unde-line:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
