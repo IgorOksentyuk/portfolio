@@ -7,10 +7,11 @@ export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   const links = [
-    { name: 'Info', link: '/' },
-    { name: 'Projects', link: '/projects' },
-    { name: 'Stack', link: '/stack' },
-    { name: 'Contacts', link: '/contacts' },
+    { name: 'Info', link: '#' },
+    { name: 'Experience', link: '#experience' },
+    { name: 'Projects', link: '#projects' },
+    { name: 'Stack', link: '#stack' },
+    { name: 'Contacts', link: '#contacts' },
   ]
 
   const downloadCV = () => {
