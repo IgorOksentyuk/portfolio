@@ -5,7 +5,8 @@
     "start": "01.01.2022",
     "end": "09.11.2023",
     "type": "full-time",
-    "logo": "jsLogo",
+    "logo": "FaGithubSquare",
+    "link": "https://github.com/IgorOksentyuk",
     "description": [
       {
         "name": "Adhered to the company's workflow and reported on the status of tasks in Google Spreadsheet;"
@@ -25,8 +26,9 @@
     "company": "GID Agency",
     "start": "09.11.2023",
     "end": "Present",
-    "type": "part-time",
+    "type": "part-time (post-project work)",
     "logo": "gidLogo",
+    "link": "https://get-it-done.agency/",
     "description": [
       {
         "name": "Developed adaptive landing pages of various complexity levels based on WordPress (ACF, Elementor);"

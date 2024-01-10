@@ -1,9 +1,10 @@
 "use client";
 
-import Header from "./components/Header";
-import Info from "./components/sections/Info";
-import Experience from "./components/sections/Experience";
-import Footer from "./components/Footer";
+import { Header } from "./components/Header";
+import { Info } from "./components/sections/Info";
+import { Experience } from "./components/sections/Experience";
+import { Footer } from "./components/Footer";
+import { MadeWith } from "./components/sections/MadeWith";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="min-h-screen w-full pt-[100px] px-[20px]">
         <Info />
         <Experience />
+        <MadeWith />
       </main>
 
       <Footer />

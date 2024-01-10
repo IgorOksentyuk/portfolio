@@ -1,16 +1,18 @@
 import Image from 'next/image';
+import { FaGithubSquare } from "react-icons/fa";
 
 import jobsData from '../../jobsData.json';
 import jsLogo from '../../../assets/js-logo.webp';
 import gidLogo from '../../../assets/gid-logo.png';
+import { SectionTitle } from '@/app/shared/SectionTitle';
 
-export default function Experience() {
+export const Experience = () => {
   return (
-    <section className="border-b border-white border-opacity-50 mb-[100px]" id="experience">
-      <h2 className="text-[32px] md:text-[44px] font-bold uppercase tracking-wide text-lightBlue 
-      py-[100px] text-center md:text-left">
-        Work experience
-      </h2>
+    <section
+      className="border-b border-white border-opacity-50"
+      id="experience"
+    >
+      <SectionTitle text={'Work experience'} />
 
       <div>
         {jobsData.map((job) => (
@@ -24,10 +26,10 @@ export default function Experience() {
               <div>
                 <p className="text-lightBlue">Company: {job.company}</p>
 
-                <div className="flex space-x-4">
+                <div className="flex flex-col md:flex-row space-x-4">
                   <p className="text-lightBlue">Period:</p>
                   <p>{job.start}</p>
-                  <p>-</p>
+                  <p>to</p>
                   <p>{job.end}</p>
                 </div>
 
@@ -37,11 +39,27 @@ export default function Experience() {
                 </div>
               </div>
 
-              {job.logo === 'jsLogo' ? (
-                <Image src={jsLogo} alt="js-logo" className="w-[100px] h-[80px] mb-[40px] md:mb-[0]" />
-              ) : job.logo === 'gidLogo' ? (
-                <Image src={gidLogo} alt="gid-logo" className="w-[140px] h-[80px] mb-[40px] md:mb-[0]" />
-              ) : null}
+              <a
+                className="transition-transform transform hover:scale-125 duration-300 ease-in-out"
+                href={job.link}
+                target='blank_'
+              >
+                {job.logo === 'FaGithubSquare' ? (
+
+                  <FaGithubSquare
+                    className="w-[100px] h-[80px] mb-[40px] md:mb-[0]"
+                  />
+
+                ) : job.logo === 'gidLogo' ? (
+
+                  <Image
+                    src={gidLogo}
+                    alt="gid-logo"
+                    className="w-[140px] h-[80px] mb-[40px] md:mb-[0]"
+                  />
+
+                ) : null}
+              </a>
             </div>
 
             <ul className="list-disc">

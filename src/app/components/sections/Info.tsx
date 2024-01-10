@@ -1,8 +1,8 @@
-import HireButton from '@/app/shared/HireButton';
-import myPhoto from '../../../assets/my-photo.png';
+import { HireButton } from '@/app/shared/HireButton';
+import myPhoto from '../../../assets/my-photo.jpg';
 import Image from "next/image";
 
-export default function Info() {
+export const Info = () => {
   return (
     <section id="info" className="border-b border-white border-opacity-50 py-[100px]">
       <div className="text-white flex flex-col md:grid md:grid-cols-6 md:grid-rows-2">
@@ -22,6 +22,7 @@ export default function Info() {
           animate-trans-right"
           src={myPhoto}
           alt="my-photo"
+          priority
         />
 
         <div className="flex flex-col justify-between items-center md:items-start col-start-1 col-end-4 

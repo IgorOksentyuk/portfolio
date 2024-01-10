@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Header() {
+export const Header = () => {
   const CvUrl = 'http://localhost:3000/CV_Ihor-Oksentiuk_FE-dev.pdf'
   const [isMenuOpen, setMenuOpen] = useState(false)
 
@@ -36,7 +36,8 @@ export default function Header() {
   return (
     <header className="fixed w-full flex justify-between items-center
     max-w-screen-xl py-6 bg-dark md:border-b border-b-none border-white border-opacity-50
-    text-white font-semibold z-50 text-lg">
+    text-white font-semibold z-50 text-lg
+    bg-dark bg-opacity-50">
       <div
         className="unde-line relative cursor-pointer ml-6"
         onClick={downloadCV}
@@ -44,7 +45,7 @@ export default function Header() {
         Download CV
       </div>
 
-      <ul className={`md:flex md:items-center absolute md:static bg-dark z-20 top-16 w-full bg-dark
+      <ul className={`md:flex md:items-center absolute md:static bg-dark z-20 top-16 w-full bg-transparent
         md:w-auto md:pr-0 md:pr-8 pl-8 transition-all duration-500 ease-in ${isMenuOpen ? '' : 'top-[-490px]'}`}>
         {links.map(link => (
           <li

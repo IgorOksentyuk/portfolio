@@ -5,20 +5,16 @@ import { SiGmail } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
-import HireButton from "../shared/HireButton"
+import { HireButton } from "../shared/HireButton"
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer
       className="w-[100%] h-[100px] px-[24px]
-      flex justify-between items-center"
+      flex flex-col md:flex-row justify-between items-center gap-[40px]"
       id="contacts"
     >
       <HireButton />
-
-      <p className="text-[18px] text-white font-bold">
-        Developed with Next.js and Tailwind
-      </p>
 
       <div className="flex gap-[10px]">
         <a

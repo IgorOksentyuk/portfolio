@@ -1,4 +1,4 @@
-export default function HireButton() {
+export const HireButton = () => {
   const openTelegram = () => {
     window.open('https://t.me/igor_oksentyuk', '_blank')
   }
