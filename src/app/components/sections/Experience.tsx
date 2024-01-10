@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { FaGithubSquare } from "react-icons/fa";
 
 import jobsData from '../../jobsData.json';
-import jsLogo from '../../../assets/js-logo.webp';
 import gidLogo from '../../../assets/gid-logo.png';
 import { SectionTitle } from '@/app/shared/SectionTitle';
 

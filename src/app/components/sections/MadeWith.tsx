@@ -1,48 +1,7 @@
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiSwiper,
-} from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { FaCompress } from "react-icons/fa6";
-
 import { SectionTitle } from "@/app/shared/SectionTitle"
+import { technologies } from "@/app/technologiesData"
 
 export const MadeWith = () => {
-  const technologies = [
-    {
-      name: 'Typescript',
-      logo: <SiTypescript className="w-[50px] h-[50px]" />,
-      link: 'https://www.typescriptlang.org/',
-    },
-    {
-      name: 'React',
-      logo: <FaReact className="w-[50px] h-[50px]" />,
-      link: 'https://react.dev/',
-    },
-    {
-      name: 'Next.js',
-      logo: <SiNextdotjs className="w-[50px] h-[50px]" />,
-      link: 'https://nextjs.org/',
-    },
-    {
-      name: 'Tailwind',
-      logo: <SiTailwindcss className="w-[50px] h-[50px]" />,
-      link: 'https://tailwindcss.com/',
-    },
-    {
-      name: 'Swiper.js',
-      logo: <SiSwiper className="w-[50px] h-[50px]" />,
-      link: 'https://swiperjs.com/',
-    },
-    {
-      name: 'Squoosh',
-      logo: <FaCompress className="w-[50px] h-[50px]" />,
-      link: 'https://squoosh.app/',
-    },
-  ]
-
   return (
     <section className="border-b border-white border-opacity-50 mb-[20px]">
       <SectionTitle text={'Made with next technologies:'} />

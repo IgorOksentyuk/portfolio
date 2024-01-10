@@ -45,7 +45,7 @@ export const Header = () => {
         Download CV
       </div>
 
-      <ul className={`md:flex md:items-center absolute md:static bg-dark z-20 top-16 w-full bg-transparent
+      <ul className={`md:flex md:items-center absolute md:static bg-dark z-20 top-16 w-full bd-dark md:bg-transparent
         md:w-auto md:pr-0 md:pr-8 pl-8 transition-all duration-500 ease-in ${isMenuOpen ? '' : 'top-[-490px]'}`}>
         {links.map(link => (
           <li

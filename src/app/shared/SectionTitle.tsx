@@ -6,8 +6,8 @@ type Props = {
 
 export const SectionTitle: React.FC<Props> = ({ text }) => {
   return (
-    <h2 className="text-[32px] md:text-[44px] font-bold uppercase tracking-wide text-lightBlue 
-    py-[100px] text-center md:text-left">
+    <h2 className="text-[24px] md:text-[34px] font-bold uppercase tracking-wide text-lightBlue 
+    py-[70px] text-center md:text-left">
       {text}
     </h2>
   )
