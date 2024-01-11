@@ -8,6 +8,8 @@ import { FaFacebook } from "react-icons/fa";
 import { HireButton } from "../shared/HireButton"
 
 export const Footer = () => {
+  const iconStyles = 'w-[30px] h-[30px] hover:fill-lightBlue transition-fill duration-300';
+
   return (
     <footer
       className="w-[100%] h-[100px] px-[24px]
@@ -22,7 +24,7 @@ export const Footer = () => {
           target="_blank"
         >
           <FaLinkedin
-            className="w-[40px] h-[40px] hover:fill-lightBlue transition-fill duration-300  "
+            className={iconStyles}
             fill="#fff"
           />
         </a>
@@ -32,7 +34,7 @@ export const Footer = () => {
           target="_blank"
         >
           <PiTelegramLogoLight
-            className="w-[40px] h-[40px] hover:fill-lightBlue transition-fill duration-300  "
+            className={iconStyles}
             fill="#fff"
           />
         </a>
@@ -42,7 +44,7 @@ export const Footer = () => {
           target="_blank"
         >
           <SiGmail
-            className="w-[40px] h-[40px] hover:fill-lightBlue transition-fill duration-300  "
+            className={iconStyles}
             fill="#fff"
           />
         </a>
@@ -52,7 +54,7 @@ export const Footer = () => {
           target="_blank"
         >
           <FaGithubSquare
-            className="w-[40px] h-[40px] hover:fill-lightBlue transition-fill duration-300  "
+            className={iconStyles}
             fill="#fff"
           />
         </a>
@@ -62,7 +64,7 @@ export const Footer = () => {
           target="_blank"
         >
           <FaFacebook
-            className="w-[40px] h-[40px] hover:fill-lightBlue transition-fill duration-300  "
+            className={iconStyles}
             fill="#fff"
           />
         </a>

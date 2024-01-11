@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export const Info = () => {
   return (
-    <section id="info" className="border-b border-white border-opacity-50 py-[100px]">
+    <section id="info" className="border-b border-white border-opacity-50 pb-[40px]">
       <div className="text-white flex flex-col md:grid md:grid-cols-6 md:grid-rows-2">
         <h1
-          className="z-10 text-[40px] md:text-[60px] font-bold tracking-wide text-center md:text-left 
+          className="z-10 text-[40px] md:text-[60px] font-bold leading-tight text-center md:text-left 
           col-start-1 col-end-5 row-start-1 row-end-2
-          mb-[40px] md:mb-0 animate-trans-left"
+          mb-[30px] md:mb-0 animate-trans-left"
         >
           Hello! I&apos;m Ihor Oksentiuk.<br />
           A Front-End Developer.<br />
