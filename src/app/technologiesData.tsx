@@ -8,6 +8,7 @@ import {
   SiJirasoftware,
   SiClickup,
   SiCanva,
+  SiVercel,
 } from "react-icons/si"
 import {
   FaReact,
@@ -118,4 +119,5 @@ export const other = [
   { name: 'ClickUp', logo: <SiClickup className={logosSize} /> },
   { name: 'Canva', logo: <SiCanva className={logosSize} /> },
   { name: 'Npm', logo: <FaNpm className={logosSize} /> },
+  { name: 'Vercel', logo: <SiVercel className={logosSize} /> },
 ]
