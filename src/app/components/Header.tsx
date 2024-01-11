@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export const Header = () => {
-  const CvUrl = 'http://localhost:3000/CV_Ihor-Oksentiuk_FE-dev.pdf'
+  const CvUrl = 'https://portfolio-ihor-oksentiuk.vercel.app/CV_Ihor-Oksentiuk_FE-dev.pdf'
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   const links = [
