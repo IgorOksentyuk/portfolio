@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         dark: '#111',
         lightBlue: '#4299e1',
-        accentBlue: '#3182ce',
+        grey: '#808080',
       },
       keyframes: {
         'trans-left': {
