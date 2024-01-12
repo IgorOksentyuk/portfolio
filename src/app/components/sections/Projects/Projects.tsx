@@ -35,7 +35,10 @@ export const Projects = () => {
   }
 
   return (
-    <section className="border-b border-white border-opacity-50 mb-[20px] pb-[70px]">
+    <section
+      className="border-b border-white border-opacity-50 mb-[20px] pb-[70px]"
+      id="projects"
+    >
       <SectionTitle text={"Projects"} />
 
       <div className="flex justify-end gap-[20px] mb-[40px]">
