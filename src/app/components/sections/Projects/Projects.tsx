@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
-import 'swiper/css';
+import 'swiper/css'
 import 'swiper/swiper-bundle.css';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 
-import myBikeImg from "../../../assets/my-bike-screen.png"
-import niceGadgetsImg from "../../../../assets/nice-gadgets-screen.png"
+import { projects } from '@/app/data/projectsData'
 import { SectionTitle } from "@/app/shared/SectionTitle"
-import "./styles.css";
+import "./styles.css"
 
 export const Projects = () => {
   const [isPrevDisabled, setIsPrevDisabled] = useState(true)
@@ -23,7 +22,7 @@ export const Projects = () => {
       setIsPrevDisabled(false)
       setIsNextDisabled(false)
     }
-  };
+  }
 
   const handleNextDisabled = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (event.currentTarget.classList.contains('swiper-button-disabled')) {
@@ -33,7 +32,7 @@ export const Projects = () => {
       setIsNextDisabled(false)
       setIsPrevDisabled(false)
     }
-  };
+  }
 
   return (
     <section className="border-b border-white border-opacity-50 mb-[20px] pb-[70px]">
@@ -72,120 +71,31 @@ export const Projects = () => {
           nextEl: `#nextBtnId`,
         }}
       >
-        <SwiperSlide>
-          <div className="relative group w-[400px]
-          transform transition-scale duration-300 hover:scale-110">
-            <a href="https://nice-gadgets-fe.vercel.app/" target="blank_">
-              <Image
-                src={niceGadgetsImg}
-                alt="nice-gadgets-screen"
-                className="w-[400px] h-[200px]
-                transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
-              />
+        {projects.map(project => (
+          <SwiperSlide key={project.link}>
+            <div className="relative group w-[400px]
+            transform transition-scale duration-300 hover:scale-110">
+              <a href={project.link} target="blank_">
+                <Image
+                  src={project.img}
+                  alt={project.alt}
+                  width={400}
+                  height={200}
+                  className="w-[400px] h-[200px]
+                  transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
+                />
 
-              <div className="absolute bottom-0 left-0 w-full h-[100px] p-[10px]
-              bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
-              group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
-                <p className="text-white">
-                  This is online store of apple gadgets. It includes theme swiper, authorization, cart logic, fetching data from API,
-                  loaders, adaprive layout and other.
-                </p>
-              </div>
-            </a>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="relative group w-[400px]
-          transform transition-scale duration-300 hover:scale-110">
-            <a href="https://nice-gadgets-fe.vercel.app/" target="blank_">
-              <Image
-                src={niceGadgetsImg}
-                alt="nice-gadgets-screen"
-                className="w-[400px] h-[200px]
-                transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
-              />
-
-              <div className="absolute bottom-0 left-0 w-full h-[100px] p-[10px]
-              bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
-              group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
-                <p className="text-white">
-                  This is online store of apple gadgets. It includes theme swiper, authorization, cart logic, fetching data from API,
-                  loaders, adaprive layout and other.
-                </p>
-              </div>
-            </a>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="relative group w-[400px]
-          transform transition-scale duration-300 hover:scale-110">
-            <a href="https://nice-gadgets-fe.vercel.app/" target="blank_">
-              <Image
-                src={niceGadgetsImg}
-                alt="nice-gadgets-screen"
-                className="w-[400px] h-[200px]
-                transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
-              />
-
-              <div className="absolute bottom-0 left-0 w-full h-[100px] p-[10px]
-              bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
-              group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
-                <p className="text-white">
-                  This is online store of apple gadgets. It includes theme swiper, authorization, cart logic, fetching data from API,
-                  loaders, adaprive layout and other.
-                </p>
-              </div>
-            </a>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="relative group w-[400px]
-          transform transition-scale duration-300 hover:scale-110">
-            <a href="https://nice-gadgets-fe.vercel.app/" target="blank_">
-              <Image
-                src={niceGadgetsImg}
-                alt="nice-gadgets-screen"
-                className="w-[400px] h-[200px]
-                transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
-              />
-
-              <div className="absolute bottom-0 left-0 w-full h-[100px] p-[10px]
-              bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
-              group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
-                <p className="text-white">
-                  This is online store of apple gadgets. It includes theme swiper, authorization, cart logic, fetching data from API,
-                  loaders, adaprive layout and other.
-                </p>
-              </div>
-            </a>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="relative group w-[400px]
-          transform transition-scale duration-300 hover:scale-110">
-            <a href="https://nice-gadgets-fe.vercel.app/" target="blank_">
-              <Image
-                src={niceGadgetsImg}
-                alt="nice-gadgets-screen"
-                className="w-[400px] h-[200px]
-                transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
-              />
-
-              <div className="absolute bottom-0 left-0 w-full h-[100px] p-[10px]
-              bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
-              group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
-                <p className="text-white">
-                  This is online store of apple gadgets. It includes theme swiper, authorization, cart logic, fetching data from API,
-                  loaders, adaprive layout and other.
-                </p>
-              </div>
-            </a>
-          </div>
-        </SwiperSlide>
+                <div className="absolute bottom-0 left-0 w-full h-[100px] pl-[30px] pt-[10px] pb-[20px]
+                bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
+                group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
+                  <p className="text-white">
+                    {project.description}
+                  </p>
+                </div>
+              </a>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
     </section>

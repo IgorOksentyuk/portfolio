@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/app/shared/SectionTitle"
-import { technologies } from "@/app/technologiesData"
+import { technologies } from "@/app/data/technologiesData"
 
 export const MadeWith = () => {
   return (

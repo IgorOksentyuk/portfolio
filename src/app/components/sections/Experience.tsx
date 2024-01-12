@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { FaGithubSquare } from "react-icons/fa";
+import Image from 'next/image'
+import { FaGithubSquare } from "react-icons/fa"
 
-import jobsData from '../../jobsData.json';
-import gidLogo from '../../../assets/gid-logo.png';
-import { SectionTitle } from '@/app/shared/SectionTitle';
+import jobsData from '../../data/jobsData.json'
+import gidLogo from '../../../assets/gid-logo.png'
+import { SectionTitle } from '@/app/shared/SectionTitle'
 
 export const Experience = () => {
   return (

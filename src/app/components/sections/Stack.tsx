@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/app/shared/SectionTitle"
-import { backEndTechnologies, cms, mainTechnologies, other, versionCotrol } from "@/app/technologiesData";
+import { backEndTechnologies, cms, mainTechnologies, other, versionCotrol } from "@/app/data/technologiesData";
 
 export const Stack = () => {
   return (

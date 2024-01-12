@@ -10,6 +10,7 @@ import {
   SiCanva,
   SiVercel,
 } from "react-icons/si"
+
 import {
   FaReact,
   FaNode,
@@ -17,7 +18,8 @@ import {
   FaGitAlt,
   FaWordpress,
   FaNpm,
-} from "react-icons/fa";
+} from "react-icons/fa"
+
 import { FaCompress, FaFigma } from "react-icons/fa6"
 
 import { TbBrandJavascript, TbBrandBulma, TbApi } from "react-icons/tb"
@@ -31,6 +33,7 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { FaHtml5, FaCss3Alt, FaSass, FaAngular } from "react-icons/fa"
+
 import { GiAtomicSlashes } from "react-icons/gi"
 
 export const technologies = [
