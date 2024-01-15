@@ -1,3 +1,4 @@
 .swiper-button-disabled {
   border-color: #808080;
+  cursor: auto;
 }
