@@ -67,7 +67,15 @@ export const Projects = () => {
       <Swiper
         modules={[Navigation]}
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        }}
 
         navigation={{
           prevEl: `#prevBtnId`,
@@ -75,7 +83,13 @@ export const Projects = () => {
         }}
       >
         {projects.map(project => (
-          <SwiperSlide key={project.link}>
+          <SwiperSlide
+            key={project.link}
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
             <div className="relative group w-[400px]
             transform transition-scale duration-300 hover:scale-110">
               <a href={project.link} target="blank_">
@@ -88,7 +102,7 @@ export const Projects = () => {
                   transition-opacity duration-300 group-hover:opacity-70 cursor-pointer"
                 />
 
-                <div className="absolute bottom-0 left-0 w-full h-[100px] pl-[30px] pt-[10px] pb-[20px]
+                <div className="absolute bottom-0 left-0 w-full h-[100px] px-[30px] pt-[10px] pb-[20px]
                 bg-dark bg-opacity-70 opacity-0 transform translate-y-[100%] transition-all duration-300
                 group-hover:translate-y-0 group-hover:opacity-100 overflow-x-auto">
                   <p className="text-white">
