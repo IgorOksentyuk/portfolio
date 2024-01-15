@@ -40,10 +40,10 @@ export const Header = () => {
   }
 
   return (
-    <header className="fixed w-full flex justify-between items-center
+    <header className={`fixed w-full flex justify-between items-center
     max-w-screen-xl py-6 bg-dark md:border-b border-b-none border-white border-opacity-50
     text-white font-semibold z-50 text-lg
-    bg-dark bg-opacity-50">
+    bg-dark ${isMenuOpen ? '' : 'bg-opacity-50'}`}>
       <div
         className="under-line relative cursor-pointer ml-6"
         onClick={downloadCV}
