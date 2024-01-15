@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
   background-color: #111;
 }
 
-.unde-line::before {
+.under-line::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -28,7 +27,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.unde-line:hover::before {
+.under-line:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

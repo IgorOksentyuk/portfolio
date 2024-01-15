@@ -1,6 +1,7 @@
-import { HireButton } from '@/app/shared/HireButton';
-import myPhoto from '../../../assets/my-photo.jpg';
-import Image from "next/image";
+import Image from "next/image"
+
+import { HireButton } from '@/app/shared/HireButton'
+import myPhoto from '../../../assets/my-photo.jpg'
 
 export const Info = () => {
   return (

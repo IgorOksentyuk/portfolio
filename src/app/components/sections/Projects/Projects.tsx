@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
-import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.css'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 
 import { projects } from '@/app/data/projectsData'
@@ -114,7 +114,6 @@ export const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
     </section>
   )
 }

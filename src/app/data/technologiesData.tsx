@@ -36,6 +36,8 @@ import { FaHtml5, FaCss3Alt, FaSass, FaAngular } from "react-icons/fa"
 
 import { GiAtomicSlashes } from "react-icons/gi"
 
+const logosSize = 'w-[80px] h-[80px]'
+
 export const technologies = [
   {
     name: 'Typescript',
@@ -74,7 +76,6 @@ export const technologies = [
   },
 ]
 
-const logosSize = 'w-[80px] h-[80px]'
 
 export const mainTechnologies = [
   { name: 'Javascript', logo: <TbBrandJavascript className={logosSize} /> },
