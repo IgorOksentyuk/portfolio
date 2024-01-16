@@ -12,31 +12,31 @@
 
 ### Header
 
-**Download CV:** Download my CV directly from the header;
-**Navigation Menu:** A responsive navigation menu, which transforms into a burger menu on mobile devices;
-**Menu Behavior:** Scroll is disabled when the menu is open to provide a seamless user experience.
+- **Download CV:** Download my CV directly from the header;
+  **Navigation Menu:** A responsive navigation menu, which transforms into a burger menu on mobile devices;
+- **Menu Behavior:** Scroll is disabled when the menu is open to provide a seamless user experience.
 
 ### Info Section
 
-**About Me:** A short informational section providing insights into who I am;
-**Contact Button:** Click the button to contact me on Telegram.
+- **About Me:** A short informational section providing insights into who I am;
+- **Contact Button:** Click the button to contact me on Telegram.
 
 ### Experience Section
 
-**Professional Journey:** Brief descriptions of my experiences and tasks accomplished.
+- **Professional Journey:** Brief descriptions of my experiences and tasks accomplished.
 
 ### Project Section
 
-**Project Slider:** View my latest projects in a responsive slider powered by Swiper.js.
+- **Project Slider:** View my latest projects in a responsive slider powered by Swiper.js.
 
 ### Stack Section
 
-**Technologies Known:** An overview of the technologies and tools I am proficient in.
+- **Technologies Known:** An overview of the technologies and tools I am proficient in.
 
 ### Footer
 
-**Contact Buttons:** Quick access to contact me on Telegram, as well as links to my social media profiles;
-**Go Top Button:** Scroll to the top of the portfolio with a single click.
+- **Contact Buttons:** Quick access to contact me on Telegram, as well as links to my social media profiles;
+- **Go Top Button:** Scroll to the top of the portfolio with a single click.
 
 ---
 
