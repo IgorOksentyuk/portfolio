@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import { SectionTitle } from "@/app/shared/SectionTitle"
 import { technologies } from "@/app/data/technologiesData"
 
@@ -13,13 +15,13 @@ export const MadeWith = () => {
             key={technology.name}
             className="transition-transform transform hover:scale-125 duration-300 ease-in-out"
           >
-            <a
+            <Link
               href={technology.link}
               className="flex flex-col items-center gap-[20px]"
             >
               <p>{technology.name}</p>
               {technology.logo}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

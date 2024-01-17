@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { GoArrowUp } from "react-icons/go"
 
 import { HireButton } from "../shared/HireButton"
@@ -14,24 +15,24 @@ export const Footer = () => {
 
       <div className="flex gap-[10px]">
         {solialData.map(social => (
-          <a
+          <Link
             key={social.name}
             href={social.link}
             target="_blank"
           >
             {social.icon}
-          </a>
+          </Link>
         ))}
       </div>
 
-      <a
-        href="#"
+      <Link
+        href="#main"
         className="under-line flex relative font-bold text-[18px] text-white
         pointer"
       >
         Go up
         <GoArrowUp className="w-[26px] h-[26px]" />
-      </a>
+      </Link>
     </footer>
   )
 }

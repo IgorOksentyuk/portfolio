@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from "next/image"
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
@@ -92,7 +93,7 @@ export const Projects = () => {
           >
             <div className="relative group w-[400px]
             transform transition-scale duration-300 hover:scale-110">
-              <a href={project.link} target="blank_">
+              <Link href={project.link} target="blank_">
                 <Image
                   src={project.img}
                   alt={project.alt}
@@ -109,7 +110,7 @@ export const Projects = () => {
                     {project.description}
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

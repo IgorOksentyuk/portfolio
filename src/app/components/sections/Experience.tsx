@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaGithubSquare } from "react-icons/fa"
 
 import jobsData from '../../data/jobsData.json'
@@ -40,7 +41,7 @@ export const Experience = () => {
                 </div>
               </div>
 
-              <a
+              <Link
                 className="transition-transform transform"
                 href={job.link}
                 target='blank_'
@@ -60,7 +61,7 @@ export const Experience = () => {
                   />
 
                 ) : null}
-              </a>
+              </Link>
             </div>
 
             <ul className="list-disc">

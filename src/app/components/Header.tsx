@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export const Header = () => {
   const CvUrl = 'https://portfolio-ihor-oksentiuk.vercel.app/CV_Ihor-Oksentiuk_FE-dev.pdf'
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   const links = [
-    { name: 'Info', link: '#' },
+    { name: 'Info', link: '#info' },
     { name: 'Experience', link: '#experience' },
     { name: 'Projects', link: '#projects' },
     { name: 'Stack', link: '#stack' },
@@ -58,11 +59,11 @@ export const Header = () => {
             key={link.name}
             className="under-line cursor-pointer relative md:ml-6 md:my-0 my-6 uppercase"
           >
-            <a
+            <Link
               href={link.link}
             >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
