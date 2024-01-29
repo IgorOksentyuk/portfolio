@@ -22,7 +22,7 @@ import {
 
 import { FaCompress, FaFigma } from "react-icons/fa6"
 
-import { TbBrandJavascript, TbBrandBulma, TbApi } from "react-icons/tb"
+import { TbBrandJavascript, TbBrandBulma, TbApi, TbSql } from "react-icons/tb"
 import {
   SiBem,
   SiStyledcomponents,
@@ -30,8 +30,7 @@ import {
   SiRedux,
   SiRecoil,
   SiReactivex,
-  SiPostgresql,
-} from "react-icons/si";
+} from "react-icons/si"
 import { FaHtml5, FaCss3Alt, FaSass, FaAngular } from "react-icons/fa"
 
 import { GiAtomicSlashes } from "react-icons/gi"
@@ -102,7 +101,7 @@ export const mainTechnologies = [
 
 export const backEndTechnologies = [
   { name: 'Node.js', logo: <FaNode className={logosSize} /> },
-  { name: 'SQL', logo: <SiPostgresql className={logosSize} /> },
+  { name: 'SQL', logo: <TbSql className={logosSize} /> },
   { name: 'RESTful API', logo: <TbApi className={logosSize} /> },
   { name: 'Postman', logo: <SiPostman className={logosSize} /> },
 ]

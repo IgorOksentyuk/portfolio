@@ -2,7 +2,7 @@ import { SectionTitle } from "@/app/shared/SectionTitle"
 import { backEndTechnologies, cms, mainTechnologies, other, versionCotrol } from "@/app/data/technologiesData"
 
 export const Stack = () => {
-  const h3Styles = 'text-white mb-[20px]'
+  const h3Styles = 'text-greyMain mb-[20px]'
   const ulStyles = 'grid grid-cols-2 md:grid-cols-4 gap-[20px] mb-[40px]'
 
   return (
@@ -23,7 +23,7 @@ export const Stack = () => {
               border border-white rounded-[12px] p-[10px]
               flex flex-col items-center gap-[10px]"
             >
-              <p className="text-lightBlue">{technology.name}</p>
+              <p>{technology.name}</p>
               {technology.logo}
             </li>
           ))}
@@ -39,7 +39,7 @@ export const Stack = () => {
               border border-white rounded-[12px] p-[10px]
               flex flex-col items-center gap-[10px]"
             >
-              <p className="text-lightBlue">{technology.name}</p>
+              <p>{technology.name}</p>
               {technology.logo}
             </li>
           ))}
@@ -55,7 +55,7 @@ export const Stack = () => {
               border border-white rounded-[12px] p-[10px]
               flex flex-col items-center gap-[10px]"
             >
-              <p className="text-lightBlue">{technology.name}</p>
+              <p>{technology.name}</p>
               {technology.logo}
             </li>
           ))}
@@ -71,7 +71,7 @@ export const Stack = () => {
               border border-white rounded-[12px] p-[10px]
               flex flex-col items-center gap-[10px]"
             >
-              <p className="text-lightBlue">{technology.name}</p>
+              <p>{technology.name}</p>
               {technology.logo}
             </li>
           ))}
@@ -87,7 +87,7 @@ export const Stack = () => {
               border border-white rounded-[12px] p-[10px]
               flex flex-col items-center gap-[10px]"
             >
-              <p className="text-lightBlue">{technology.name}</p>
+              <p>{technology.name}</p>
               {technology.logo}
             </li>
           ))}

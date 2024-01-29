@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithubSquare, FaFacebook } from "react-icons/fa"
 import { PiTelegramLogoLight } from "react-icons/pi"
 import { SiGmail } from "react-icons/si"
 
-const iconStyles = 'w-[30px] h-[30px] hover:fill-lightBlue transition-fill duration-300'
+const iconStyles = 'w-[30px] h-[30px] hover:fill-greyMain transition-fill duration-300'
 
 export const solialData = [
   {

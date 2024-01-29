@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { CiLocationOn } from "react-icons/ci"
 
 import { HireButton } from '@/app/shared/HireButton'
 import myPhoto from '../../../assets/my-photo.jpg'
@@ -14,7 +15,11 @@ export const Info = () => {
         >
           Hello! I&apos;m Ihor Oksentiuk.<br />
           A Front-End Developer.<br />
-          <span className="text-lightBlue">based Ukraine, Odesa.</span><br />
+
+
+          <span className="flex items-center gap-[10px] text-greyMain">
+            <CiLocationOn /> Ukraine, Odesa.
+          </span><br />
         </h1>
 
         <Image
@@ -27,7 +32,7 @@ export const Info = () => {
         />
 
         <div className="flex flex-col justify-between items-center md:items-start col-start-1 col-end-4 
-        text-[23px] text-lightBlue animate-trans-left">
+        text-[23px] text-white animate-trans-left">
           <p className="leading-[150%] mb-[60px] md:mb-0">
             I am likely one of the most enthusiastic front-end developers you&apos;ll ever collaborate with.
             If you have an exciting project that requires exceptional skills, I&apos;m the perfect fit for the job.

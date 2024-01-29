@@ -10,8 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         dark: '#111',
-        lightBlue: '#4299e1',
-        grey: '#808080',
+        greyMain: '#808080',
       },
       keyframes: {
         'trans-left': {

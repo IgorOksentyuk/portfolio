@@ -26,18 +26,16 @@ export const Experience = () => {
             <div className="flex flex-col md:flex-row justify-between gap-[40px] gap-[120px]
             max-w-[100%] md:max-w-[70%]">
               <div>
-                <p className="text-lightBlue">Company: {job.company}</p>
+                <div className="flex gap-[14px]">
+                  <p className="text-greyMain">Company:</p>
+                  <p>{job.company}</p>
+                </div>
 
                 <div className="flex flex-col md:flex-row space-x-4">
-                  <p className="text-lightBlue">Period:</p>
+                  <p className="text-greyMain">Period:</p>
                   <p>{job.start}</p>
                   <p>to</p>
                   <p>{job.end}</p>
-                </div>
-
-                <div className="flex gap-[20px]">
-                  <p className="text-lightBlue">Type:</p>
-                  <p>{job.type}</p>
                 </div>
               </div>
 
@@ -65,7 +63,7 @@ export const Experience = () => {
             </div>
 
             <ul className="list-disc">
-              <p className="text-lightBlue">Tasks:</p>
+              <p className="text-greyMain">Responsibilities:</p>
 
               {job.description.map(task => (
                 <li

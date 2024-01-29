@@ -49,7 +49,7 @@ export const Projects = () => {
           onClick={event => handlePrevDisabled(event)}
         >
           <IoIosArrowBack
-            className={`w-[30px] h-[30px] ${isPrevDisabled ? 'fill-grey' : 'fill-white'}`}
+            className={`w-[30px] h-[30px] ${isPrevDisabled ? 'fill-greyMain' : 'fill-white'}`}
           />
         </div>
 
@@ -60,7 +60,7 @@ export const Projects = () => {
           onClick={event => handleNextDisabled(event)}
         >
           <IoIosArrowForward
-            className={`w-[30px] h-[30px] ${isNextDisabled ? 'fill-grey' : 'fill-white'}`}
+            className={`w-[30px] h-[30px] ${isNextDisabled ? 'fill-greyMain' : 'fill-white'}`}
           />
         </div>
       </div>

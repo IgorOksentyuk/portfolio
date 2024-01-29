@@ -4,19 +4,18 @@
     "company": "GID Agency",
     "start": "09.11.2023",
     "end": "Present",
-    "type": "post-project work",
     "logo": "gidLogo",
     "link": "https://get-it-done.agency/",
     "description": [
       {
-        "name": "Developed adaptive landing pages and websites of various complexity levels based on WordPress (ACF, Elementor);"
+        "name": "Developing adaptive landing pages and websites of various complexity levels based on WordPress (ACF, Elementor);"
       },
       {
-        "name": "Participated in team calls to discuss company goals and improvement methods;"
+        "name": "Participating in team calls to discuss company goals and improvement methods;"
       },
-      { "name": "Approved and corrected design layouts for landing pages;" },
+      { "name": "Approving and correcting design layouts for landing pages;" },
       {
-        "name": "Made edits, and improved existing websites and other projects."
+        "name": "Making edits, and improving existing websites and other projects."
       }
     ]
   },
@@ -25,15 +24,14 @@
     "company": "Self-employed",
     "start": "01.01.2022",
     "end": "09.11.2023",
-    "type": "full-time",
     "logo": "FaGithubSquare",
     "link": "https://github.com/IgorOksentyuk",
     "description": [
       {
-        "name": "Adhered to the company's workflow and reported on the status of tasks in Google Spreadsheet;"
+        "name": "Adhering to the workflow and reporting on the status of tasks in Google Spreadsheet;"
       },
       {
-        "name": "Attended regular Zoom meetings with the team and actively worked in a team to achieve development goals;"
+        "name": "Attending regular Zoom meetings with the team and actively working in a team to achieve development goals;"
       },
       {
         "name": "UI/UX Design, Responsive Design, JavaScript Development, Component-Based Architecture, Web Performance Optimization, Server-Side Logic, API Development, Database Management;"

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from "react"
+import Link from "next/link"
+import { MdOutlineFileDownload } from "react-icons/md"
 
 export const Header = () => {
   const CvUrl = 'https://portfolio-ihor-oksentiuk.vercel.app/CV_Ihor-Oksentiuk_FE-dev.pdf'
@@ -46,10 +47,11 @@ export const Header = () => {
     text-white font-semibold z-50 text-lg
     bg-dark ${isMenuOpen ? '' : 'bg-opacity-50'}`}>
       <div
-        className="under-line relative cursor-pointer ml-6"
+        className="under-line flex items-center gap-[10px] relative cursor-pointer ml-6"
         onClick={downloadCV}
       >
-        Download CV
+        <p>Download CV</p>
+        <MdOutlineFileDownload className='w-[24px] h-[24px]' />
       </div>
 
       <ul className={`md:flex md:items-center absolute md:static bg-dark z-20 top-16 w-full bd-dark md:bg-transparent
