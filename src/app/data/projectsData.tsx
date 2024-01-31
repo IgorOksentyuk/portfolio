@@ -2,6 +2,7 @@ import niceGadgetsImg from "../../assets/nice-gadgets-screen.png"
 import myBikeImg from "../../assets/my-bike-screen.png"
 import toDoImg from "../../assets/todo-screen.png"
 import coursesImg from "../../assets/courses-screen.png"
+import amazonTablesImg from "../../assets/amazon-tables-screen.png"
 import metriconImg from "../../assets/metricon-screen.png"
 import spdLoadImg from "../../assets/spd-load-screen.png"
 import skyLimitImg from "../../assets/sky-limit-screen.png"
@@ -38,10 +39,11 @@ export const projects = [
     There are also two different sliders and pagination here.`,
   },
   {
-    link: 'https://igoroksentyuk.github.io/metricon_animated_landing/',
-    img: metriconImg,
-    alt: 'metricon-screen',
-    description: `One-page adaptive landing page with a slider and various blocks with different types of animation.`,
+    link: 'https://amazon-tables.vercel.app/',
+    img: amazonTablesImg,
+    alt: 'amazon-tables-screen',
+    description: `This is a React application, designed to display data through three tables.
+    Each table offers functionality for filtering, sorting, and pagination and routing between tables.`,
   },
   {
     link: 'https://spd-load-test-task-kohl.vercel.app/',
@@ -63,6 +65,12 @@ export const projects = [
     img: skyLimitImg,
     alt: 'sky-limit-screen',
     description: `Simple landing page with header, navigation, cards section and footer.`,
+  },
+  {
+    link: 'https://igoroksentyuk.github.io/metricon_animated_landing/',
+    img: metriconImg,
+    alt: 'metricon-screen',
+    description: `One-page adaptive landing page with a slider and various blocks with different types of animation.`,
   },
   {
     link: 'https://igoroksentyuk.github.io/Proxy-seller-test/#/?query=&sortBy=',
