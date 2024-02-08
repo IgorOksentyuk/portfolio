@@ -2,6 +2,7 @@ import niceGadgetsImg from "../../assets/nice-gadgets-screen.png"
 import myBikeImg from "../../assets/my-bike-screen.png"
 import toDoImg from "../../assets/todo-screen.png"
 import coursesImg from "../../assets/courses-screen.png"
+import dwImg from "../../assets/dw-screen.png"
 import amazonTablesImg from "../../assets/amazon-tables-screen.png"
 import metriconImg from "../../assets/metricon-screen.png"
 import spdLoadImg from "../../assets/spd-load-screen.png"
@@ -37,6 +38,12 @@ export const projects = [
     alt: 'courses-screen',
     description: `One-page adaptive landing page with a mobile menu, various sections, blocks, and cards.
     There are also two different sliders and pagination here.`,
+  },
+  {
+    link: 'https://igoroksentyuk.github.io/dw-landing-affnetix/',
+    img: dwImg,
+    alt: 'dw-screen',
+    description: `Fully adaptive landing page on which user can browse and purchase various frying pans. Built with user-friendly interface, semantic tags and basic schema.org attributes for SEO optimization.`,
   },
   {
     link: 'https://amazon-tables.vercel.app/',
